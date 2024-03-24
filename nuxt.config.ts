@@ -1,4 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true }
+  srcDir: 'src/',
+  devtools: { enabled: true },
+  devServer: {
+    port: 3000
+  },
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/google-fonts']
 })
